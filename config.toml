@@ -1,4 +1,4 @@
-db_url="hijrah.sqlite"
+db_url="mysql://root:9EkUgWMfp2jZs7Lt4sX8@containers-us-west-182.railway.app:8028/railway"
 admin_username="yd777"
 admin_password="Draze999"
 lnd_host="bitswatch.local"
