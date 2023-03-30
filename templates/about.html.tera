@@ -1,0 +1,17 @@
+{% extends "base" %}
+{% block body %}
+
+<h3>About</h3>
+
+<p><b>Market Name</b>: {{ admin_settings.market_name }}</p>
+<p><b>Market Fee Rate</b>: {{ admin_settings.fee_rate_basis_points / 100 }}% of each sale</p>
+<p><b>User Bond Price</b>: {{ admin_settings.user_bond_price_sat }} sats</p>
+<p><b>Lightning Node</b>: <a href="https://amboss.space/node/{{ lightning_node_pubkey }}" rel="noreferrer noopener" target="_blank">{{ lightning_node_pubkey }}</a></p>
+
+<p><b>PGP Key</b>: {% if admin_settings.pgp_key %}<pre>{{ admin_settings.pgp_key }}</pre>{% else %}Not set{% endif %}</p>
+
+<h6><b>Subscribe to updates from this market on <a href="https://github.com/squeaknode/squeaknode" rel="noreferrer noopener" target="_blank">Squeaknode</a></b>:</h6>
+<p><b>Squeaknode Pubkey</b>: {% if admin_settings.squeaknode_pubkey %}{{ admin_settings.squeaknode_pubkey }}{% else %}Not set{% endif %}</p>
+<p><b>Squeaknode Address</b>: {% if admin_settings.squeaknode_address %}{{ admin_settings.squeaknode_address }}{% else %}Not set{% endif %}</p>
+
+{% endblock body %}

@@ -1,0 +1,66 @@
+{% extends "base" %}
+{% block body %}
+
+<h3>My Account</h3>
+
+<b>Username</b>: <a href="/user/{{ user.email }}">{{ user.email }}</a>
+<br>
+
+<b>Account Balance</b>: {{ account_info.account_balance_sat }} sats
+<br>
+
+<a href="my_account_balance">Account Balance History</a>
+<br>
+
+<a href="withdraw">Withdraw Funds</a>
+<br>
+
+<a href="/account_activation/{{ user_account.public_id }}">Account Activation</a>
+<br>
+
+
+<div class="container">
+  <p><!--Nothing to see here --></p>
+  <div class="row">
+    <h5>Seller Info</h5>
+    <a href="/seller_history/{{ user.email }}">My Shipped Orders</a>
+    <br>
+    <a href="my_processing_orders">My Processing Orders</a>
+    <br>
+    <a href="/new_listing">Add New Listing</a>
+    <br>
+    <a href="my_unsubmitted_listings">My Unsubmitted Listings</a>
+    <br>
+    <a href="my_pending_listings">My Pending Listings</a>
+    <br>
+    <a href="my_rejected_listings">My Rejected Listings</a>
+    <br>
+    <a href="my_active_listings">My Active Listings</a>
+    <br>
+    <a href="my_deactivated_listings">My Deactivated Listings</a>
+  </div>
+</div>
+
+<div class="container">
+  <p><!--Nothing to see here --></p>
+  <div class="row">
+    <h5>Buyer Info</h5>
+    <a href="my_unpaid_orders">My Unpaid Orders</a>
+    <br>
+    <a href="my_paid_orders">My Paid Orders</a>
+  </div>
+</div>
+
+<div class="container">
+  <p><!--Nothing to see here --></p>
+  <div class="row">
+    <h5>Contact</h5>
+    <a href="/user_profile/{{ user.email }}">User Profile</a>
+    <a href="update_user_pgp_info">Update My PGP Info</a>
+    <a href="update_user_squeaknode_info">Update My Squeaknode Info</a>
+    <br>
+  </div>
+</div>
+
+
+{% endblock body %}

@@ -1,0 +1,24 @@
+{% extends "base" %}
+{% block body %}
+
+<br>
+
+  <div class="container">
+    <p><!--Nothing to see here --></p>
+
+    <div class="row">
+
+      <h3>Market Liabilies</h3>
+
+      <div class="twelve columns">
+
+	<p><b>Total Market Liabilities</b>: {{ total_market_liabilities_sat }} sats</p>
+
+	{% include "accountbalancechangepage" %}
+
+      </div>
+    </div>
+  </div>
+
+
+{% endblock body %}

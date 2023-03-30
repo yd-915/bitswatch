@@ -1,0 +1,25 @@
+{% extends "base" %}
+{% block body %}
+
+<br>
+
+  <div class="container">
+    <p><!--Nothing to see here --></p>
+
+    <div class="row">
+
+      <h3>My Account Balance</h3>
+
+      <div class="twelve columns">
+
+	<p><b>Account Balance</b>: {{ account_balance_sat }} sats</p>
+	<p><a href="withdraw">Withdraw Funds</a></p>
+
+	{% include "accountbalancechangepage" %}
+
+      </div>
+    </div>
+  </div>
+
+
+{% endblock body %}
