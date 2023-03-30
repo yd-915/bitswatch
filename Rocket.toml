@@ -1,0 +1,6 @@
+[default.databases.squeakroad]
+url = "mysql://root:9EkUgWMfp2jZs7Lt4sX8@containers-us-west-182.railway.app:8028/railway"
+
+[default.limits]
+file = "10 MiB"
+data-form="10 MiB"

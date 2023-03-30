@@ -1,0 +1,7 @@
+db_url="hijrah.sqlite"
+admin_username="yd777"
+admin_password="Draze999"
+lnd_host="bitswatch.local"
+lnd_port=8080
+lnd_tls_cert_path="~/.umbrel/app-data/lightning/data/lnd/tls.cert"
+lnd_macaroon_path="~/.umbrel/app-data/lightning/data/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
